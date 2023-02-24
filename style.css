@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #000;
+    height: 100vh;
+    overflow: hidden;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.image-big-list-item.active {
+    display: block;
+}
+
+.image-big-list-item {
+    display: none;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.image-small-list-item {
+    display: inline-block;
+    margin: 0 3px;
+}
+
+.section-Main {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    height: 100vh;
+}
+
+.section-Main .image-big-list .image-big-list-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    min-height: 100vh;
+}
+
+.section-Main .image-small-list .image-small-list-item {
+    display: block;
+    width: fit-content;
+    margin: 0;
+}
+
+.section-Main .image-small-list .image-small-list-item p {
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 1;
+    cursor: pointer;
+    margin: 50px 0;
+    text-transform: lowercase;
+    color: #fff;
+    opacity: 0.5;
+    transition: all ease 0.5s;
+}
+
+.section-Main .image-small-list .image-small-list-item.active p {
+    opacity: 1;
+    font-weight: 500;
+    font-size: 50px;
+    padding: 10px 20px;
+}
+
+.section-Main h1 {
+    font-size: 60px;
+    line-height: 1;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin: 20px 0 50px;
+    border-bottom: 4px solid #fff;
+    width: fit-content;
+    padding-bottom: 5px;
+    margin-left: 20px;
+    color: #fff;
+}
+
+.section-Main .image-small-list {
+    padding-left: 20px;
+}
